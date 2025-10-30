@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça uma doação para a ACAPRA e ajude a salvar vidas">
+    <title>Doações - ACAPRA</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/assets/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <img src="src/assets/acapra-logo.png" alt="ACAPRA Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>ACAPRA</h1>
+                        <p>Proteção Animal</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="animais-resgatados.html" class="nav-link">Animais Resgatados</a>
+                    <a href="doacoes.html" class="nav-link active">Doações</a>
+                    <a href="contato.html" class="nav-link">Contato</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="animais-resgatados.html" class="mobile-nav-link">Animais Resgatados</a>
+                <a href="doacoes.html" class="mobile-nav-link">Doações</a>
+                <a href="contato.html" class="mobile-nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="padding: 3rem 0;">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="fade-in">
+                        <div class="badge">
+                            💝 Cada doação salva vidas
+                        </div>
+                        <h1 class="hero-title" style="font-size: 2.5rem;">Como Você Pode Ajudar</h1>
+                        <p class="hero-subtitle">
+                            Sua generosidade faz toda a diferença na vida dos animais que resgatamos.<br>
+                            Escolha a melhor forma de contribuir com nosso trabalho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Methods -->
+        <section style="padding: 3rem 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Doações Financeiras</h2>
+                    <p>Escolha a forma mais conveniente para você contribuir</p>
+                </div>
+
+                <div class="mission-grid">
+                    <!-- PIX -->
+                    <div class="mission-card">
+                        <div class="mission-icon">📱</div>
+                        <h3>PIX</h3>
+                        <p style="margin-bottom: 1rem;">Forma mais rápida e prática de doar</p>
+                        <div style="background: var(--secondary); padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+                            <p style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">
+                                Chave PIX (E-mail):
+                            </p>
+                            <p style="font-size: 1.125rem; font-weight: 700; color: var(--primary); word-break: break-all;">
+                                acaprabrusque@gmail.com
+                            </p>
+                        </div>
+                        <p style="font-size: 0.875rem; color: var(--muted-foreground);">
+                            Após realizar a doação, envie o comprovante para nosso e-mail para emitirmos o recibo.
+                        </p>
+                    </div>
+
+                    <!-- Transferência Bancária -->
+                    <div class="mission-card">
+                        <div class="mission-icon">🏦</div>
+                        <h3>Transferência Bancária</h3>
+                        <p style="margin-bottom: 1rem;">Para doações programadas</p>
+                        <div style="text-align: left; color: var(--muted-foreground);">
+                            <p><strong>Banco:</strong> Em breve</p>
+                            <p><strong>Agência:</strong> Em breve</p>
+                            <p><strong>Conta Corrente:</strong> Em breve</p>
+                            <p><strong>CNPJ:</strong> Em breve</p>
+                        </div>
+                    </div>
+
+                    <!-- Doação Recorrente -->
+                    <div class="mission-card">
+                        <div class="mission-icon">🔄</div>
+                        <h3>Seja um Protetor Mensal</h3>
+                        <p style="margin-bottom: 1rem;">Contribua mensalmente e ajude ainda mais</p>
+                        <p style="color: var(--muted-foreground); margin-bottom: 1.5rem;">
+                            Com uma doação recorrente, você nos ajuda a planejar melhor nossos resgates 
+                            e atendimentos, garantindo cuidados contínuos para os animais.
+                        </p>
+                        <a href="contato.html" class="btn btn-primary">
+                            Quero ser Protetor Mensal
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Material Donations -->
+        <section style="padding: 3rem 0; background: rgba(90, 45, 130, 0.03);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Doações de Materiais</h2>
+                    <p>Itens essenciais que sempre precisamos</p>
+                </div>
+
+                <div class="about-content" style="grid-template-columns: 1fr;">
+                    <div class="mission-card">
+                        <h3 style="margin-bottom: 1.5rem;">Itens Mais Necessários</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: left;">
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem;">🍖 Alimentação</h4>
+                                <ul style="color: var(--muted-foreground); margin-left: 1.5rem;">
+                                    <li>Ração para cães (adultos e filhotes)</li>
+                                    <li>Ração para gatos (adultos e filhotes)</li>
+                                    <li>Sachês e petiscos</li>
+                                    <li>Leite para filhotes</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem;">🏥 Higiene e Saúde</h4>
+                                <ul style="color: var(--muted-foreground); margin-left: 1.5rem;">
+                                    <li>Medicamentos veterinários</li>
+                                    <li>Produtos de limpeza</li>
+                                    <li>Shampoos e antipulgas</li>
+                                    <li>Materiais cirúrgicos</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem;">🏠 Conforto</h4>
+                                <ul style="color: var(--muted-foreground); margin-left: 1.5rem;">
+                                    <li>Casinhas e camasinhas</li>
+                                    <li>Cobertores e mantas</li>
+                                    <li>Coleiras e guias</li>
+                                    <li>Comedouros e bebedouros</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--primary); margin-bottom: 0.5rem;">🧹 Diversos</h4>
+                                <ul style="color: var(--muted-foreground); margin-left: 1.5rem;">
+                                    <li>Jornal e papelão</li>
+                                    <li>Tapetes higiênicos</li>
+                                    <li>Brinquedos</li>
+                                    <li>Caixas de transporte</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-card" style="margin-top: 2rem; text-align: center;">
+                    <h3>Como Entregar suas Doações</h3>
+                    <p style="color: var(--muted-foreground); margin-bottom: 1.5rem;">
+                        Entre em contato conosco para combinar a melhor forma de entregar sua doação.<br>
+                        Também podemos buscar em sua casa, dependendo da quantidade.
+                    </p>
+                    <a href="contato.html" class="btn btn-primary">
+                        Agendar Entrega
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section style="padding: 3rem 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>O Impacto das Suas Doações</h2>
+                    <p>Veja como sua contribuição faz a diferença</p>
+                </div>
+
+                <div class="stats-grid" style="background: transparent; color: var(--foreground); padding: 0;">
+                    <div class="mission-card">
+                        <div class="stat-number" style="color: var(--primary);">R$ 50</div>
+                        <div class="stat-label" style="color: var(--foreground); opacity: 1;">Alimenta 1 animal</div>
+                        <div class="stat-sublabel" style="color: var(--muted-foreground);">Por 1 mês</div>
+                    </div>
+                    <div class="mission-card">
+                        <div class="stat-number" style="color: var(--primary);">R$ 150</div>
+                        <div class="stat-label" style="color: var(--foreground); opacity: 1;">Consulta veterinária</div>
+                        <div class="stat-sublabel" style="color: var(--muted-foreground);">Completa</div>
+                    </div>
+                    <div class="mission-card">
+                        <div class="stat-number" style="color: var(--primary);">R$ 300</div>
+                        <div class="stat-label" style="color: var(--foreground); opacity: 1;">Castração completa</div>
+                        <div class="stat-sublabel" style="color: var(--muted-foreground);">Com medicamentos</div>
+                    </div>
+                    <div class="mission-card">
+                        <div class="stat-number" style="color: var(--primary);">R$ 500</div>
+                        <div class="stat-label" style="color: var(--foreground); opacity: 1;">Resgate completo</div>
+                        <div class="stat-sublabel" style="color: var(--muted-foreground);">Da rua ao lar</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thank You Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Muito Obrigado!</h2>
+                    <p>
+                        Cada doação, seja ela financeira ou material, representa esperança e uma nova chance de vida 
+                        para os animais que resgatamos. Juntos, estamos fazendo a diferença!
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contato.html" class="btn btn-outline-light">
+                            Entrar em Contato
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo and Mission -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="src/assets/acapra-logo.png" alt="ACAPRA Logo" class="footer-logo-img">
+                        <div>
+                            <h3>ACAPRA</h3>
+                            <p>Associação Brusquense de Proteção Animal</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Dedicados ao resgate, cuidado e adoção responsável de animais em Brusque. 
+                        Cada vida importa e merece uma segunda chance.
+                    </p>
+                    <div class="footer-heart">
+                        ❤️ Feito com amor pelos animais
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <nav>
+                        <a href="animais-resgatados.html">Animais Resgatados</a>
+                        <a href="doacoes.html">Como Doar</a>
+                        <a href="contato.html">Contato</a>
+                    </nav>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            ✉️ acaprabrusque@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 ACAPRA - Associação Brusquense de Proteção Animal. Todos os direitos reservados.</p>
+                    <p>Desenvolvido com 💜 para a proteção animal</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="src/assets/script.js"></script>
+</body>
+</html>

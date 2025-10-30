@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ACAPRA Design System - Cores institucionais roxo e creme */
+
+@layer base {
+  :root {
+    /* ACAPRA Brand Colors */
+    --acapra-purple: 275 48% 35%; /* #5a2d82 */
+    --acapra-cream: 49 63% 95%; /* #f9f6ee */
+    --acapra-purple-light: 275 48% 45%;
+    --acapra-purple-dark: 275 48% 25%;
+    --acapra-cream-dark: 49 40% 85%;
+    
+    /* Semantic Design Tokens */
+    --background: 49 63% 95%; /* Creme de fundo */
+    --foreground: 275 48% 25%; /* Roxo escuro para textos */
+
+    --card: 0 0% 100%; /* Branco para cards */
+    --card-foreground: 275 48% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 275 48% 25%;
+
+    --primary: 275 48% 35%; /* Roxo ACAPRA */
+    --primary-foreground: 49 63% 95%; /* Creme sobre roxo */
+
+    --secondary: 49 40% 85%; /* Creme mais escuro */
+    --secondary-foreground: 275 48% 35%;
+
+    --muted: 49 30% 90%;
+    --muted-foreground: 275 30% 50%;
+
+    --accent: 275 48% 45%; /* Roxo claro */
+    --accent-foreground: 49 63% 95%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 275 20% 85%;
+    --input: 0 0% 100%;
+    --ring: 275 48% 35%;
+
+    --radius: 0.5rem;
+    
+    /* ACAPRA Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--acapra-purple)), hsl(var(--acapra-purple-light)));
+    --gradient-cream: linear-gradient(180deg, hsl(var(--acapra-cream)), hsl(var(--acapra-cream-dark)));
+    
+    /* ACAPRA Shadows */
+    --shadow-purple: 0 10px 30px -10px hsl(var(--acapra-purple) / 0.3);
+    --shadow-soft: 0 4px 20px hsl(var(--acapra-purple) / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-opensans;
+    background-image: 
+      radial-gradient(circle at 20% 30%, hsl(var(--acapra-purple) / 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, hsl(var(--acapra-purple) / 0.02) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold;
+  }
+}
+
+/* ACAPRA Custom Components */
+@layer components {
+  .paw-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M30 25c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm-8 8c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm16 0c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3zm-8 8c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+  }
+  
+  .acapra-gradient {
+    background: var(--gradient-primary);
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .fade-in-delay-1 {
+    animation: fadeIn 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .fade-in-delay-2 {
+    animation: fadeIn 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-purple);
+  }
+  
+  .animal-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  .animal-card img {
+    transition: var(--transition-smooth);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
